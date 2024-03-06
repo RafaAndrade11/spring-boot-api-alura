@@ -1,9 +1,10 @@
 package br.com.randrade.api.controller;
 
-import br.com.randrade.api.endereco.Endereco;
 import br.com.randrade.api.medico.DadosCadastroMedico;
 import br.com.randrade.api.medico.Medico;
 import br.com.randrade.api.medico.MedicoRepository;
+import jakarta.transaction.Transactional;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,7 +18,9 @@ public class MedicoController {
     private MedicoRepository repository;
 
     @PostMapping
-    public void cadastrar(@RequestBody DadosCadastroMedico dados) {
+    @Transactional
+    public void cadastrar(@RequestBody @Valid DadosCadastroMedico dados) {
+
         repository.save(new Medico(dados));
     }
 
