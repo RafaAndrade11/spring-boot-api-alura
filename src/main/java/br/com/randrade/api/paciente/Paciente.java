@@ -53,4 +53,8 @@ public class Paciente {
     public Endereco getEndereco() {
         return endereco;
     }
+
+    public Long getId() {
+        return id;
+    }
 }
