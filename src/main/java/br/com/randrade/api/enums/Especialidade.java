@@ -1,4 +1,4 @@
-package br.com.randrade.api.medico;
+package br.com.randrade.api.enums;
 
 public enum Especialidade {
 

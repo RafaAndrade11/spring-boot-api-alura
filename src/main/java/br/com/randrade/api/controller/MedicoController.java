@@ -1,15 +1,16 @@
 package br.com.randrade.api.controller;
 
-import br.com.randrade.api.medico.*;
-import br.com.randrade.api.paciente.DadosAtualizarPaciente;
+import br.com.randrade.api.domain.Medico;
+import br.com.randrade.api.dtos.DadosAtualizarMedicos;
+import br.com.randrade.api.dtos.DadosCadastroMedico;
+import br.com.randrade.api.dtos.DadosListagemMedico;
+import br.com.randrade.api.repository.MedicoRepository;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/medicos")

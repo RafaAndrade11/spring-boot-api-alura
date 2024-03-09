@@ -1,6 +1,6 @@
-package br.com.randrade.api.medico;
+package br.com.randrade.api.repository;
 
-import io.micrometer.observation.ObservationFilter;
+import br.com.randrade.api.domain.Medico;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
