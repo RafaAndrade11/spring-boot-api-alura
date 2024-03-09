@@ -61,4 +61,16 @@ public class Medico {
     public Long getId() {
         return id;
     }
+
+    public void atualizarInformacoes(DadosAtualizarMedicos dados) {
+        if (dados.nome() != null) {
+            this.nome = dados.nome();
+        }
+        if (dados.telefone() != null) {
+            this.nome = dados.telefone();
+        }
+        if (dados.endereco() != null){
+            this.endereco.atualizarInformacoes(dados.endereco());
+        }
+    }
 }

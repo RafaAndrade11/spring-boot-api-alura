@@ -1,11 +1,9 @@
 package br.com.randrade.api.paciente;
 
 import br.com.randrade.api.endereco.Endereco;
-import br.com.randrade.api.medico.DadosCadastroMedico;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Table(name = "pacientes")
