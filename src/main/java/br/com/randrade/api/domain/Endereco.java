@@ -1,6 +1,6 @@
 package br.com.randrade.api.domain;
 
-import br.com.randrade.api.dtos.DadosEndereco;
+import br.com.randrade.api.dtos.endereco.DadosEndereco;
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

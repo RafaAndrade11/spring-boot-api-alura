@@ -1,4 +1,4 @@
-package br.com.randrade.api.dtos;
+package br.com.randrade.api.dtos.endereco;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;

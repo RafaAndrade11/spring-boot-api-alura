@@ -1,6 +1,6 @@
 package br.com.randrade.api.dtos.medicos;
 
-import br.com.randrade.api.dtos.DadosEndereco;
+import br.com.randrade.api.dtos.endereco.DadosEndereco;
 import br.com.randrade.api.enums.Especialidade;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;

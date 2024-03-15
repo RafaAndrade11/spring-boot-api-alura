@@ -1,7 +1,7 @@
 package br.com.randrade.api.controller;
 
 import br.com.randrade.api.domain.Paciente;
-import br.com.randrade.api.dtos.DadosDetalhesPaciente;
+import br.com.randrade.api.dtos.pacientes.DadosDetalhesPaciente;
 import br.com.randrade.api.dtos.pacientes.DadosAtualizarPaciente;
 import br.com.randrade.api.dtos.pacientes.DadosCadastroPaciente;
 import br.com.randrade.api.dtos.pacientes.DadosListagemPaciente;

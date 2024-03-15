@@ -1,6 +1,6 @@
 package br.com.randrade.api.dtos.pacientes;
 
-import br.com.randrade.api.dtos.DadosEndereco;
+import br.com.randrade.api.dtos.endereco.DadosEndereco;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
