@@ -1,8 +1,9 @@
-package br.com.randrade.api.dtos;
+package br.com.randrade.api.dtos.pacientes;
 
+import br.com.randrade.api.dtos.DadosEndereco;
 import jakarta.validation.constraints.NotNull;
 
-public record DadosAtualizarMedicos(
+public record DadosAtualizarPaciente(
         @NotNull Long id,
         String nome,
         String telefone,

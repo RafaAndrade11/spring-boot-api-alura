@@ -1,4 +1,4 @@
-package br.com.randrade.api.dtos;
+package br.com.randrade.api.dtos.pacientes;
 
 import br.com.randrade.api.domain.Paciente;
 

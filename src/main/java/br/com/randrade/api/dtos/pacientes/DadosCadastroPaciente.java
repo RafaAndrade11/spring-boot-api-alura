@@ -1,13 +1,13 @@
-package br.com.randrade.api.dtos;
+package br.com.randrade.api.dtos.pacientes;
 
-import br.com.randrade.api.enums.Especialidade;
+import br.com.randrade.api.dtos.DadosEndereco;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 
-public record DadosCadastroMedico(
+public record DadosCadastroPaciente(
         @NotBlank
         String nome,
         @NotBlank
@@ -16,10 +16,8 @@ public record DadosCadastroMedico(
         @NotBlank
         String telefone,
         @NotBlank
-        @Pattern(regexp = "\\d{4,6}")
-        String crm,
-        @NotNull
-        Especialidade especialidade,
+        @Pattern(regexp = "\\d{11}")
+        String cpf,
         @NotNull
         @Valid
         DadosEndereco endereco

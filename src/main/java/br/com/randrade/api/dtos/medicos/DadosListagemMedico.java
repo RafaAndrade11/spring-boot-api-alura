@@ -1,4 +1,4 @@
-package br.com.randrade.api.dtos;
+package br.com.randrade.api.dtos.medicos;
 
 import br.com.randrade.api.domain.Medico;
 import br.com.randrade.api.enums.Especialidade;
