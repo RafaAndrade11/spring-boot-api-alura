@@ -1,9 +1,9 @@
 package br.com.randrade.api.controller;
 
 import br.com.randrade.api.domain.Paciente;
-import br.com.randrade.api.dtos.DadosAtualizarPaciente;
-import br.com.randrade.api.dtos.DadosCadastroPaciente;
-import br.com.randrade.api.dtos.DadosListagemPaciente;
+import br.com.randrade.api.dtos.pacientes.DadosAtualizarPaciente;
+import br.com.randrade.api.dtos.pacientes.DadosCadastroPaciente;
+import br.com.randrade.api.dtos.pacientes.DadosListagemPaciente;
 import br.com.randrade.api.repository.PacienteRepository;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;

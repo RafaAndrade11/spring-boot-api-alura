@@ -1,7 +1,7 @@
 package br.com.randrade.api.domain;
 
-import br.com.randrade.api.dtos.DadosAtualizarPaciente;
-import br.com.randrade.api.dtos.DadosCadastroPaciente;
+import br.com.randrade.api.dtos.pacientes.DadosAtualizarPaciente;
+import br.com.randrade.api.dtos.pacientes.DadosCadastroPaciente;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

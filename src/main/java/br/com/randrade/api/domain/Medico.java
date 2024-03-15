@@ -1,7 +1,7 @@
 package br.com.randrade.api.domain;
 
-import br.com.randrade.api.dtos.DadosAtualizarMedicos;
-import br.com.randrade.api.dtos.DadosCadastroMedico;
+import br.com.randrade.api.dtos.medicos.DadosAtualizarMedicos;
+import br.com.randrade.api.dtos.medicos.DadosCadastroMedico;
 import br.com.randrade.api.enums.Especialidade;
 import jakarta.persistence.*;
 import lombok.*;
