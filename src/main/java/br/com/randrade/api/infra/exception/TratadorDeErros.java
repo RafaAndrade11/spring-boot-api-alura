@@ -1,4 +1,4 @@
-package br.com.randrade.api.infra;
+package br.com.randrade.api.infra.exception;
 
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.ResponseEntity;
