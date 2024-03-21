@@ -1,6 +1,5 @@
 package br.com.randrade.api.domain;
 
-import br.com.randrade.api.enums.MotivoCancelamento;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -31,9 +30,4 @@ public class Consulta {
 
     private LocalDateTime data;
 
-    private MotivoCancelamento motivoCancelamento;
-
-    public void cancelar(MotivoCancelamento motivo) {
-        this.motivoCancelamento = motivo;
-    }
 }
