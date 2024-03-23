@@ -1,12 +1,14 @@
-package br.com.randrade.api.validations;
+package br.com.randrade.api.validations.agendamentos;
 
 import br.com.randrade.api.dtos.consultas.DadosAgendamentoConsulta;
 import br.com.randrade.api.infra.exception.ValidacaoException;
+import org.springframework.stereotype.Component;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
 
-public class ValidadorHorarioMarcarAntecedencia {
+@Component
+public class ValidadorHorarioMarcarAntecedencia implements ValidadorAgendamentoDeConsulta {
 
     public void validar (DadosAgendamentoConsulta dados) {
         var dataConsulta = dados.data();

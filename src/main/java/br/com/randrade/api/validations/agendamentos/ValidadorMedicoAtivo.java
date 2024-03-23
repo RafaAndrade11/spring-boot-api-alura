@@ -1,11 +1,15 @@
-package br.com.randrade.api.validations;
+package br.com.randrade.api.validations.agendamentos;
 
 import br.com.randrade.api.dtos.consultas.DadosAgendamentoConsulta;
 import br.com.randrade.api.infra.exception.ValidacaoException;
 import br.com.randrade.api.repository.MedicoRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
-public class ValidadorMedicoAtivo {
+@Component
+public class ValidadorMedicoAtivo implements ValidadorAgendamentoDeConsulta {
 
+    @Autowired
     private MedicoRepository repository;
 
     public void validar (DadosAgendamentoConsulta dados) {
