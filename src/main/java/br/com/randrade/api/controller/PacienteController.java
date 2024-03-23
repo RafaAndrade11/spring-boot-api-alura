@@ -1,11 +1,12 @@
 package br.com.randrade.api.controller;
 
 import br.com.randrade.api.domain.Paciente;
-import br.com.randrade.api.dtos.pacientes.DadosDetalhesPaciente;
 import br.com.randrade.api.dtos.pacientes.DadosAtualizarPaciente;
 import br.com.randrade.api.dtos.pacientes.DadosCadastroPaciente;
+import br.com.randrade.api.dtos.pacientes.DadosDetalhesPaciente;
 import br.com.randrade.api.dtos.pacientes.DadosListagemPaciente;
 import br.com.randrade.api.repository.PacienteRepository;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 @RestController
 @RequestMapping("/pacientes")
+@SecurityRequirement(name = "bearer-key")
 public class PacienteController {
     @Autowired
     private PacienteRepository pacienteRepository;
